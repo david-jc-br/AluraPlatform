@@ -1,1 +1,1 @@
-# Group6
+# GroupSix
