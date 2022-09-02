@@ -8,4 +8,3 @@
 * Diego de Souza Marques
 * Mauricio Martins Damasceno
 * Igor Cunha Ferreira
-* Leonardo Deboni
