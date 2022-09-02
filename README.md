@@ -1,3 +1,11 @@
-# GroupSix
+# Alura Platform 
 
-*dicionario:* https://docs.google.com/document/d/1bB9gSmeRIsLc1AgO0ekj4ej6TX78Lb0HjErXahGLd6I/edit
+*Trabalho Final de Introdução a Sistema de Banco de Dados*
+
+**Integrantes:**
+
+* David de Jesus Costa - 202020086
+* Diego de Souza Marques - 202111037
+* Mauricio Martins Damasceno - 202020884
+* Igor Cunha Ferreira - 201720493
+* Leonardo Deboni - 201820008
