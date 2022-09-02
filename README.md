@@ -4,8 +4,8 @@
 
 **Integrantes:**
 
-* David de Jesus Costa - 202020086
-* Diego de Souza Marques - 202111037
-* Mauricio Martins Damasceno - 202020884
-* Igor Cunha Ferreira - 201720493
-* Leonardo Deboni - 201820008
+* David de Jesus Costa
+* Diego de Souza Marques
+* Mauricio Martins Damasceno
+* Igor Cunha Ferreira
+* Leonardo Deboni
