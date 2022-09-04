@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS Participa (
 		REFERENCES Evento (idEvento)
 		ON DELETE CASCADE
 		ON UPDATE NO ACTION,
-  CONSTRAINT fk_Evento_has_Funcionário_Funcionário1
+	CONSTRAINT fk_Evento_has_Funcionário_Funcionário1
 		FOREIGN KEY (idFuncionário)
 		REFERENCES Funcionario (idFuncionário)
 		ON DELETE CASCADE
