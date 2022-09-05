@@ -7,14 +7,14 @@ GRANT SELECT ON aluraDb.* TO 'devDBA'@'localhost';
 
 DROP USER 'devDBA'@'localhost';
 
-/*-- Criação e eclusão de um usuário que tem permissão de selecionar dados dos Alunos utilizados para entrega e executar um store producere.*/
+/*-- Criação e exclusão de um usuário que tem permissão de selecionar dados dos Alunos utilizados para entrega e executar um store producere.*/
 
-CREATE USER 'david'@'localhost' IDENTIFIED BY '123456';
+CREATE USER 'davidjc'@'localhost' IDENTIFIED BY '123456';
 
-GRANT SELECT ON aluraDb.Aluno TO 'david'@'localhost';
+GRANT SELECT ON aluraDb.Aluno TO 'davidjc'@'localhost';
 
-REVOKE SELECT ON aluraDb.Aluno FROM 'david'@'localhost';
+REVOKE SELECT ON aluraDb.Aluno FROM 'davidjc'@'localhost';
 
-GRANT EXECUTE ON PROCEDURE aluraDb.InfoEmpresas TO 'david'@'localhost';
+GRANT EXECUTE ON PROCEDURE aluraDb.InfoEmpresas TO 'davidjc'@'localhost';
 
-DROP USER 'david'@'localhost';
+DROP USER 'davidjc'@'localhost';
