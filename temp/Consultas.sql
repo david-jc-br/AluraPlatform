@@ -8,11 +8,10 @@ SELECT nomeProf, salário
 FROM Professor 
 WHERE sexo = "M" OR 
 	idProfessor IN (
-			SELECT idProfessor 
-            FROM licencia NATURAL JOIN Curso
-            WHERE nomeCurso = "Banco de Dados"
-            );
-
+		SELECT idProfessor 
+            	FROM licencia NATURAL JOIN Curso
+            	WHERE nomeCurso = "Banco de Dados"
+ 		);
 
 -- 2- Selecione o nome dos funcionários que trabalham na empresa de nome 'Google' ou que trabalham na emrpesa de nome 'Oracle'.
 
@@ -47,13 +46,13 @@ ON A.idALuno = M.idAluno;
 -- nome e salario dos professores que licenciam o curso de id = 1111, ou que ministram evento de id = 789 
 
 -- 5- Retorna o nome e o salário do professor(es) que possuiu o 
-salário maior que média de todos os professores da plataforma*/
+-- salário maior que média de todos os professores da plataforma
 
 SELECT nomeProf AS "Nome do Professor", salario AS "Salário"
 FROM Professor 
 WHERE salario > SOME (
-	  SELECT AVG(salario)
-    FROM Professor)
+	SELECT AVG(salario)
+   	FROM Professor)
 ORDER BY salario DESC;
 
 -- 6- Recupera nome dos Alunos que não possuem Matrícula 
@@ -61,6 +60,6 @@ ORDER BY salario DESC;
 SELECT nomeAluno AS "Aluno que não\n possuem matrícula"
 FROM Aluno 
 WHERE idAluno NOT IN (
-    SELECT idAluno 
-    FROM Matricula
+	SELECT idAluno 
+	FROM Matricula
 );
