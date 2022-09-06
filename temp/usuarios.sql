@@ -15,6 +15,6 @@ GRANT SELECT ON aluraDb.Aluno TO 'davidjc'@'localhost';
 
 REVOKE SELECT ON aluraDb.Aluno FROM 'davidjc'@'localhost';
 
-GRANT EXECUTE ON PROCEDURE aluraDb.InfoEmpresas TO 'davidjc'@'localhost'; -- trocar o nome do precedure
+GRANT EXECUTE ON PROCEDURE aluraDb.CadastraCurso TO 'davidjc'@'localhost';
 
 DROP USER 'davidjc'@'localhost';
