@@ -2,18 +2,20 @@
 
 SET SQL_SAFE_UPDATES = 0; -- Desabilita o safe update
 
--- Atualiza a data de inicío do(s) evento(s) cujo o professor Fabio Akita Coordena
+-- Atualiza a data do fim do(s) evento(s) cujo o professor Fabio Akita Coordena
 
 UPDATE Evento 
-SET dataInicio = "2019-12-28"
-WHERE idEvento IN (SELECT idEvento 
-		   FROM Professor JOIN Coordena
-		   WHERE nomeProf = "Fabio Akita"); 
+SET dataFim = "2020-02-15"
+WHERE idEvento IN (
+	SELECT idEvento 
+	FROM Professor NATURAL JOIN Coordena 
+	WHERE nomeProf = "Fabio Akita"
+); 
 
--- Aumenta mais 12 horas na carga horária de eventos de imersão
+-- Aumenta mais 4 horas na carga horária de eventos de imersão
 
 UPDATE Evento
-SET carga_horaria = carga_horaria + 12
+SET carga_horaria = carga_horaria + 4
 WHERE nomeEvento LIKE 'Imersao%';
 
 -- Atualiza o evento em que o professor com id = 3 coordena
