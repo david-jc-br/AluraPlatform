@@ -1,16 +1,14 @@
-USE aluraDb;
-
 -- Item (d): Exemplos de modificação de dados em 5 tabelas
 
 SET SQL_SAFE_UPDATES = 0; -- Desabilita o safe update
 
--- Atualiza a data de inicío do evento em que o professor Fabio Akita Coordena
+-- Atualiza a data de inicío do(s) evento(s) cujo o professor Fabio Akita Coordena
 
 UPDATE Evento 
 SET dataInicio = "2019-12-28"
 WHERE idEvento IN (SELECT idEvento 
-				   FROM Professor JOIN Coordena
-				   WHERE nomeProf = "Fabio Akita"); 
+		   FROM Professor JOIN Coordena
+		   WHERE nomeProf = "Fabio Akita"); 
 
 -- Aumenta mais 12 horas na carga horária de eventos de imersão
 
@@ -24,10 +22,29 @@ UPDATE Coordena
 SET idEvento = 2 
 WHERE idProfessor = 3;
 
--- Atualiza o plano de anual para semestral para curso de SQL Com PostgreSQL
+-- Atualiza o plano do curso 'SQL Com PostgreSQL' de anual para semestral
 
 UPDATE Curso 
 SET plano = "Plano Semestral"
 WHERE nomeCurso = "SQL com PostgreSQL";
 
--- Falta mais 2 atualização
+-- Atualiza o curso que o professor com id = 13 licencia 
+
+UPDATE  Licencia
+SET idCurso = 8
+WHERE idprofessor = 13;
+
+-- Aumenta o salário do professor Rodrigo Gonçalves em mais 2560.50 
+
+UPDATE Professor
+SET salario = salario + 2560.50
+WHERE nomeProf  = "Rodrigo Gonçalves";
+
+SET SQL_SAFE_UPDATES = 1; -- Habilita o safe update
+
+/* Safe update é um recurso de atualização segura do Mysql em
+   que ele não executa o update ou Delete sem o WHERE com
+   uma chave ou LIMIT, esse recurso têm por objetivo evitar 
+   erros humanos, já que quando não usamos o WHERE, nós 
+   aplicamos um update em todas al linhas da tabela
+*/
