@@ -151,10 +151,10 @@ INSERT INTO Funcionario VALUES (NULL, "Alícia Lucca", "CTO", "6");
 INSERT INTO Funcionario VALUES (NULL, "Mateus Henrique", "Junior", "7");
 INSERT INTO Funcionario VALUES (NULL, "Anabela Enzo", "Motion Design", "2");
 INSERT INTO Funcionario VALUES (NULL, "Reginaldo Antunes", "Motion Design", "21");
-INSERT INTO Funcionario VALUES (NULL, "Dorival Marcelo da Silva", "Dev Senior", "22");
+INSERT INTO Funcionario VALUES (NULL, "Dorival Marcelo", "Dev Senior", "4");
 INSERT INTO Funcionario VALUES (NULL, "Luciano Nine", "Dev Junior", "18");
 INSERT INTO Funcionario VALUES (NULL, "Dorina Nina Portinol", "Treinee", "3");
-INSERT INTO Funcionario VALUES (NULL, "Camile Ninemati de Abril", "Dev Junior", "4");
+INSERT INTO Funcionario VALUES (NULL, "Camile Ninemati", "Dev Junior", "4");
 
 -- exemplos de inserção na tabela Licencia
 
