@@ -24,6 +24,10 @@
     INSERT INTO Professor VALUES (NULL, "Maria Gabriela Oliveira", "SQL", 7000.00,"F");
     INSERT INTO Professor VALUES (NULL, "Guilherme Lima", "Engenharia de Software", 5000.00,"M");
     INSERT INTO Professor VALUES (NULL, "Janaina Oliveira", "Engenharia de Software", 30000.00,"F");
+    INSERT INTO Professor VALUES (NULL, "Jubileu Nunes Beraldo", "Youtuber", 960.58, 'M');
+    INSERT INTO Professor VALUES (NULL, "Carlos Sanfoneu Junior", "DBA", 10600, 'M');
+    INSERT INTO Professor VALUES (NULL, "João Malaquias Pires", "Engenheiro de DevOps", 9960.58, 'M');
+    INSERT INTO Professor VALUES (NULL, "Julio Lima de Abreu", "Back-End", 15860, 'M');
 
     -- exemplo de inserção na tabela aluno
 
