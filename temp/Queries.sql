@@ -63,3 +63,18 @@ WHERE idAluno NOT IN (
 	SELECT idAluno 
 	FROM Matricula
 );
+
+-- 7 Recupera o total de eventos de imersão e média da carga entre eles.
+
+SELECT COUNT(nomeEvento) AS "Qtde total de\nEventos de Imersão", 
+	   AVG(carga_horaria) AS "Média de Carga\nHorária"
+FROM Evento
+WHERE nomeEvento LIKE "Imersão%";
+
+-- 8 Recupera o em ordem alfabética nome do(s) que não coordenam nenhum Evento.
+
+SELECT nomeProf AS "Professores que não\ncoordenam nenhum evento"
+FROM Professor P LEFT OUTER JOIN Coordena C 
+ON P.idProfessor = C.idProfessor
+WHERE C.idEvento IS NULL
+ORDER BY nomeProf;
