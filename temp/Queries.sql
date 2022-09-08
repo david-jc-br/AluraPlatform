@@ -25,7 +25,7 @@ from Funcionario F join Empresa E
 ON F.Empresa_idEmpresa = E.idEmpresa
 where nomeEmpresa='Oracle';
 
--- 3- Qual o nome do curso que o professor Denilson licencia?
+-- 3- Qual o nome do curso que o professor Rodrigo Gonçalves licencia?
 
 SELECT nomeCurso AS nome_do_curso
 FROM Curso C JOIN Licencia L
