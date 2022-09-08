@@ -31,7 +31,7 @@ SELECT nomeCurso AS nome_do_curso
 FROM Curso C JOIN Licencia L
 ON C.idCurso = L.idCurso 
 JOIN Professor P ON P.idProfessor = L.idProfessor 
-WHERE nomeProf = 'Denilson';
+WHERE nomeProf = 'Rodrigo Gonçalves';
 
 -- 4- Recuperar os dados de cada aluno e de suas respectivas matrículas, se o aluno ainda não estiver feito nenhuma matrícula indique com valores nulos
 
