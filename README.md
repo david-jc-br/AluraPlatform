@@ -17,7 +17,7 @@ Trabalho Final de Introdução a Sistema de Banco de Dados - Grupo 6 - Turma 10A
 
 ![image](https://user-images.githubusercontent.com/73839667/189491591-e7908dd6-064b-462a-8b70-c9b60f48aa83.png)
 
-## Cadastrar Curso
+## Cadastrar Curso:
 
 ![image](https://user-images.githubusercontent.com/73839667/189491719-9b5855f0-a380-4304-9d8b-2d914e4ac786.png)
 
