@@ -25,6 +25,6 @@ Trabalho Final de Introdução a Sistema de Banco de Dados - Grupo 6 - Turma 10A
 
 ![image](https://user-images.githubusercontent.com/73839667/189491657-4957b159-9a25-4237-bdd0-d051537eb4d6.png)
 
-## Outras Tabelas(Obs: no totala são 11):
+## Outras Tabelas(Obs: no total são 11):
 
 ![image](https://user-images.githubusercontent.com/73839667/189491856-c2b4f61f-8749-42d9-a535-2125f154de3a.png)
